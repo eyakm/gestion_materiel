@@ -1,0 +1,182 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <style>
+        /* Make the entire page's background cover the screen */
+        body {
+            background: url({{ asset('gestion_location_materiel.jpg') }}) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+        }
+
+        /* Centering the content container */
+        .example-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            padding: 2rem;
+        }
+
+        /* Green overlay for the central content section */
+        .welcome-container {
+            position: relative;
+            background-color: rgba(100, 200, 100, 0.3); /* Green overlay with some transparency */
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-container h1 {
+            color: rgba(0, 128, 0, 0.7);;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .welcome-container ul {
+            text-align: left;
+            color: white;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Styling for the code snippets inside the list */
+        .example-wrapper code {
+            /*background: #F5F5F5;*/
+            background: #1a5e1a;
+            padding: 2px 6px;
+        }
+    </style>
+
+    <div class="example-wrapper">
+        <div class="welcome-container">
+            <h1>Hello {{ controller_name }}! ✅</h1>
+
+            <p>This friendly message is coming from:</p>
+            <ul>
+                <li>Your controller at <code>D:/MPDSIR2/Méthode Agile/gestion_location/src/Controller/HomeController.php</code></li>
+                <li>Your template at <code>D:/MPDSIR2/Méthode Agile/gestion_location/templates/home/index.html.twig</code></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{#{% extends 'base.html.twig' %}#}
+
+{#{% block title %}Hello HomeController!{% endblock %}#}
+
+{#{% block body %}#}
+{#<style>#}
+{#    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }#}
+{#    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }#}
+{#</style>#}
+
+{#<div class="example-wrapper">#}
+{#    <h1>Hello {{ controller_name }}! ✅</h1>#}
+
+{#    This friendly message is coming from:#}
+{#    <ul>#}
+{#        <li>Your controller at <code>D:/MPDSIR2/Méthode Agile/gestion_location/src/Controller/HomeController.php</code></li>#}
+{#        <li>Your template at <code>D:/MPDSIR2/Méthode Agile/gestion_location/templates/home/index.html.twig</code></li>#}
+{#    </ul>#}
+{#</div>#}
+{#{% endblock %}#}
+{#{% extends 'base.html.twig' %}#}
+
+{#{% block title %}Welcome to Your Application!{% endblock %}#}
+
+{#{% block body %}#}
+{#    <style>#}
+{#        /* Background with overlay */#}
+{#        body {#}
+{#            background: url({{ asset('gestion_location_materiel.jpg') }}) no-repeat center center fixed;#}
+{#            background-size: cover;#}
+{#            color: #fff;#}
+{#            font-family: Arial, sans-serif;#}
+{#            margin: 0;#}
+{#            padding: 0;#}
+{#        }#}
+
+{#        /* Overlay for readability */#}
+{#        .overlay {#}
+{#            /*background-color: rgba(0, 128, 0, 0.7); /* Green overlay */#}
+{#             /*background-color: rgba(100, 200, 100, 0.3); */#}
+{#            /* background-color: rgba(0, 180, 0, 0.4); */#}
+{#            /* background-color: rgba(0, 150, 0, 0.5); */#}
+{#            /* background-color: rgba(144, 238, 144, 0.25); */#}
+
+{#            position: absolute;#}
+{#            top: 0;#}
+{#            left: 0;#}
+{#            width: 100%;#}
+{#            height: 100%;#}
+{#            display: flex;#}
+{#            justify-content: center;#}
+{#            align-items: center;#}
+{#        }#}
+
+{#        /* Container styling */#}
+{#        .welcome-container {#}
+{#            text-align: center;#}
+{#            padding: 2em;#}
+{#            border-radius: 15px;#}
+{#            max-width: 800px;#}
+{#            width: 90%;#}
+{#            margin: auto;#}
+{#        }#}
+
+{#        /* Title styling */#}
+{#        h1 {#}
+{#            font-size: 2.5em;#}
+{#            color: #DFFFD8; /* Light green text */#}
+{#            margin-bottom: 0.5em;#}
+{#        }#}
+
+{#        /* Subtitle styling */#}
+{#        p {#}
+{#            font-size: 1.2em;#}
+{#            margin-bottom: 1.5em;#}
+{#        }#}
+
+{#        /* File path info */#}
+{#        .file-info {#}
+{#            background-color: #E0FFE0; /* Light green */#}
+{#            color: #2E7D32; /* Dark green */#}
+{#            padding: 1em;#}
+{#            border-radius: 8px;#}
+{#            margin-top: 1em;#}
+{#            font-size: 0.9em;#}
+{#        }#}
+
+{#        /* List styling */#}
+{#        .file-info code {#}
+{#            background-color: #A5D6A7; /* Medium green */#}
+{#            padding: 2px 6px;#}
+{#            border-radius: 4px;#}
+{#        }#}
+{#    </style>#}
+
+{#    <div class="overlay">#}
+{#        <div class="welcome-container">#}
+{#            <h1>Welcome, {{ controller_name }}! 🌱</h1>#}
+{#            <p>We're glad to have you here! Explore and manage your application with ease.</p>#}
+
+{#            <div class="file-info">#}
+{#                <p>This friendly message is brought to you by:</p>#}
+{#                <ul>#}
+{#                    <li>Your controller at <code>D:/MPDSIR2/Méthode Agile/gestion_location/src/Controller/HomeController.php</code></li>#}
+{#                    <li>Your template at <code>D:/MPDSIR2/Méthode Agile/gestion_location/templates/home/index.html.twig</code></li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
